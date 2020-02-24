@@ -19,8 +19,11 @@
   "bugs": {
     "url": "https://github.com/macc98/Vue-UI-wheel/issues"
   },
-      "homepage": "https://github.com/macc98/Vue-UI-wheel#readme",
+  "homepage": "https://github.com/macc98/Vue-UI-wheel#readme",
   "dependencies": {
     "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
