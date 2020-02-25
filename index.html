@@ -7,29 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue-UI-Wheel</title>
     <style>
-        *{margin: 0;padding: 0;box-sizing: border-box}
-        :root{
-            --button-height:32px;
-            --font-size:14px;
-            --button-bg:white;
-            --button-active-bg:#eee;
-            --border-radius:4px;
-            --color:#333;
-            --border-color:#999;
-            --border-color-hover:#666;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
         }
-        #app{
-            margin:20px;
+
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
         }
-        body{
+
+        #app {
+            margin: 20px;
+        }
+
+        body {
             font-size: var(--font-size);
         }
     </style>
 </head>
 <body>
 <div id="app">
-    <m-button></m-button>
+    <m-button icon="setting" icon-position="right">按钮</m-button>
+    <m-button icon="setting" >按钮</m-button>
+    <m-button>按钮</m-button>
+    <m-button icon="setting" icon-position="left">按钮</m-button>
+
 </div>
-    <script src="./src/app.js"></script>
+<script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_1656048_2rj6lolnmpe.js"></script>
 </body>
 </html>
