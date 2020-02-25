@@ -4,23 +4,38 @@
     </div>
 </template>
 <script>
-    export default {}
+    export default {
+        mounted() {
+            for (let node of this.$el.children) {
+                let name = node.nodeName.toLowerCase()
+                if (name !== 'button') {
+                    console.log(`m-button-group的子元素应该是m-button，当前:${name}`)
+                }
+            }
+        }
+    }
 </script>
 <style lang="scss">
-    .m-button-group{
+    .m-button-group {
         display: inline-flex;
         vertical-align: middle;
-        border-radius: var(--border-radius);
-        & .m-button{
+
+        > .m-button {
             border-radius: 0;
-            margin-left: -1px;
-            &:first-child{
-                border-radius:var(--border-radius) 0 0 var(--border-radius) ;
+
+            &:not(:first-child) {
+                margin-left: -1px;
             }
-            &:last-child{
+
+            &:first-child {
+                border-radius: var(--border-radius) 0 0 var(--border-radius);
+            }
+
+            &:last-child {
                 border-radius: 0 var(--border-radius) var(--border-radius) 0;
             }
-            &:hover{
+
+            &:hover {
                 z-index: 1;
             }
         }
