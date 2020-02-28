@@ -43,11 +43,14 @@
         <m-button>目录</m-button>
         <m-button icon="right" icon-position="right">下一页</m-button>
     </m-button-group>
-    <m-input value="测试汉字1"></m-input>
+    <m-input @input="inputMessage = $event" :value="inputMessage"></m-input>
+    <m-input  v-model="inputMessage"></m-input>
+    {{inputMessage}}
+    <button @click="inputMessage += '1'">+1</button>
     <m-input value="测试汉字2" disabled></m-input>
     <m-input value="测试汉字3" readonly></m-input>
     <m-input value="测试汉字4" error="错啦"></m-input>
-    <m-input value="测试汉字5" info="对啦"></m-input>
+    <m-input value="测试汉字5" info="对啦" @change="change"></m-input>
 </div>
 <script src="./src/app.js"></script>
 </body>

@@ -12,6 +12,12 @@ Vue.component('m-input',Input);
 new Vue({
     el: '#app',
     data:{
-        loading1:false
+        loading1:false,
+        inputMessage: 'hi'
+    },
+    methods:{
+        change:function (x) {
+            console.log(x.target.value)
+        }
     }
 });
