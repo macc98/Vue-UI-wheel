@@ -15,9 +15,5 @@ new Vue({
         loading1:false,
         inputMessage: 'hi'
     },
-    methods:{
-        change:function (x) {
-            console.log(x.target.value)
-        }
-    }
+
 });
