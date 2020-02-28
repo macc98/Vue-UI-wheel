@@ -6,10 +6,11 @@
 <script>
     import './icon-font'
     export default {
+        name:'MIcon',
         props:['name']
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .icon {
         height: 1em;
         width: 1em;
