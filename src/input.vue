@@ -2,9 +2,9 @@
     <div class="wrap">
         <input type="text" :value="value" :disabled="disabled" :readonly="readonly"
                :class="{'error':error,'info':info}" @change="$emit('change',$event.target.value)"
-                @input="$emit('input',$event.target.value)"
-                @focus="$emit('focus',$event.target.value)"
-                @blur="$emit('blur',$event.target.value)">
+               @input="$emit('input',$event.target.value)"
+               @focus="$emit('focus',$event.target.value)"
+               @blur="$emit('blur',$event.target.value)">
         <template v-if="error">
             <Icon name="error" class="icon-error"></Icon>
             <span class="errorMessage">{{error}}</span>
@@ -49,7 +49,7 @@
     $border-hover-color: #666;
     $border-radius: 4px;
     $font-size: 14px;
-    $box-shadow: 0px 0px 3px 0px #666;
+    $box-shadow: 0 0 3px 0 #666;
     $background: #eee;
     $error-color: #F1453D;
     $info-color: green;

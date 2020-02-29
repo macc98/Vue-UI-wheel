@@ -7,12 +7,12 @@
 </template>
 <script>
     export default {
-        name:'MButton',
+        name: 'MButton',
         props: {
             icon: {},
-            loading:{
-                type:Boolean,
-                default:false
+            loading: {
+                type: Boolean,
+                default: false
             },
             iconPosition: {
                 type: String,
@@ -26,9 +26,14 @@
 </script>
 <style lang="scss" scoped>
     @keyframes spin {
-        0%{transform: rotate(0deg)}
-        100%{transform: rotate(360deg)}
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
     }
+
     .m-button {
         font-size: var(--font-size);
         height: var(--button-height);
@@ -60,7 +65,8 @@
                 margin-left: 0.3em;
             }
         }
-        .loading{
+
+        .loading {
             animation: spin 5s infinite linear;
         }
     }
