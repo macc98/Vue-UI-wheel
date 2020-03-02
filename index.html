@@ -12,67 +12,10 @@
             padding: 0;
             box-sizing: border-box
         }
-
-        :root {
-            --button-height: 32px;
-            --font-size: 14px;
-            --button-bg: white;
-            --button-active-bg: #eee;
-            --border-radius: 4px;
-            --color: #333;
-            --border-color: #999;
-            --border-color-hover: #666;
-        }
-
-        #app {
-            margin: 20px;
-        }
-
-        body {
-            font-size: var(--font-size);
-        }
     </style>
 </head>
 <body>
-<div id="app" style="border: 1px solid;">
-    <m-button icon="setting" icon-position="right">按钮</m-button>
-    <m-button icon="setting" :loading="loading1" @click="loading1 = true">按钮</m-button>
-    <m-button>按钮</m-button>
-    <m-button-group>
-        <m-button icon="left">上一页</m-button>
-        <m-button>目录</m-button>
-        <m-button icon="right" icon-position="right">下一页</m-button>
-    </m-button-group>
-    <m-input @input="inputMessage = $event" :value="inputMessage"></m-input>
-    <m-input v-model="inputMessage"></m-input>
-    {{inputMessage}}
-    <button @click="inputMessage += '1'">+1</button>
-    <m-input value="测试汉字2" disabled></m-input>
-    <m-input value="测试汉字3" readonly></m-input>
-    <m-input value="测试汉字4" error="错啦"></m-input>
-    <m-input value="测试汉字5" info="对啦"></m-input>
-    <hr>
-    <m-row gutter="10">
-        <m-col span="8">哈</m-col>
-        <m-col span="8">哈</m-col>
-        <m-col span="8">哈</m-col>
-    </m-row>
-    <m-row>
-        <m-col span="6">哈</m-col>
-        <m-col span="12">哈</m-col>
-        <m-col span="6">哈</m-col>
-    </m-row>
-    <m-row>
-        <m-col span="6">哈</m-col>
-        <m-col span="6">哈</m-col>
-        <m-col span="6" offset="6">哈</m-col>
-    </m-row>
-    <m-row gutter="30">
-        <m-col span="8">哈</m-col>
-        <m-col span="8">哈</m-col>
-        <m-col span="8">哈</m-col>
-    </m-row>
-</div>
+
 <script src="./src/app.js"></script>
 </body>
 </html>

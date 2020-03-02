@@ -34,7 +34,6 @@
 <style lang="scss" scoped>
     .col {
         width: 50%;
-
         $class: offset-;
         @for $n from 1 through 24 {
             &.#{$class}#{$n} {

@@ -17,6 +17,7 @@
     }
 </script>
 <style lang="scss" scoped>
+    $border-radius: 4px;
     .m-button-group {
         display: inline-flex;
         vertical-align: middle;
@@ -29,11 +30,11 @@
             }
 
             &:first-child {
-                border-radius: var(--border-radius) 0 0 var(--border-radius);
+                border-radius: $border-radius 0 0 $border-radius;
             }
 
             &:last-child {
-                border-radius: 0 var(--border-radius) var(--border-radius) 0;
+                border-radius: 0 $border-radius $border-radius 0;
             }
 
             &:hover {
