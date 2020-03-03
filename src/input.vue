@@ -94,7 +94,7 @@
                 border-color: $info-color;
 
                 &:focus {
-                    box-shadow: inset 0 0 3 0 $info-color;
+                    box-shadow: inset 0 0 3px 0 $info-color;
                 }
             }
         }

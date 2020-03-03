@@ -2,9 +2,11 @@
   "name": "macc-minions",
   "version": "0.0.2",
   "description": "Vue-UI-wheel",
-  "main": "dist/index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel public/index.html",
+    "build": "rm -rf dist && parcel build index.html --public-url ./"
   },
   "repository": {
     "type": "git",
