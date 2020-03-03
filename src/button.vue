@@ -77,6 +77,4 @@
             animation: spin 5s infinite linear;
         }
     }
-
-
 </style>
